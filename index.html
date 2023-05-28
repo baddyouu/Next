@@ -23,7 +23,7 @@
       cursor: pointer;
       display: flex;
       align-items: center;
-      animation: moveButton 1.5s infinite alternate;
+      animation: moveButton 0.8s infinite alternate;
     }
 
     button i {
@@ -32,13 +32,13 @@
 
     @keyframes moveButton {
       0% {
-        transform: translateY(0);
+        transform: translateX(0);
       }
       50% {
-        transform: translateY(-5px);
+        transform: translateX(10px);
       }
       100% {
-        transform: translateY(0);
+        transform: translateX(0);
       }
     }
   </style>
