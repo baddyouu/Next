@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Blank Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
     body {
       display: flex;
@@ -13,18 +14,27 @@
     }
 
     button {
-      padding: 10px 20px;
-      font-size: 18px;
+      padding: 15px 30px;
+      font-size: 24px;
       background-color: #007bff;
       color: #fff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    button i {
+      margin-right: 10px;
     }
   </style>
 </head>
 <body>
-  <button id="nextButton">Next</button>
+  <button id="nextButton">
+    <i class="fas fa-arrow-right"></i>
+    Holen Sie sich das Angebot
+  </button>
 
   <script>
     document.getElementById("nextButton").addEventListener("click", function() {
