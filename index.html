@@ -23,10 +23,23 @@
       cursor: pointer;
       display: flex;
       align-items: center;
+      animation: moveButton 2s infinite alternate;
     }
 
     button i {
       margin-right: 10px;
+    }
+
+    @keyframes moveButton {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+      100% {
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
