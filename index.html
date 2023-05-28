@@ -2,13 +2,32 @@
 <html>
 <head>
   <title>Blank Page</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <button id="nextButton">Next</button>
 
   <script>
     document.getElementById("nextButton").addEventListener("click", function() {
-      // Redirect to a specific URL when the button is clicked
       window.location.href = "https://example.com"; // Replace with your desired URL
     });
   </script>
